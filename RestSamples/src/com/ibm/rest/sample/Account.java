@@ -12,8 +12,17 @@ public class Account{
       String description;
       String currency;
       double balance;
+      String sletMig;
+      
+      public String getSletMig() {
+		return sletMig;
+	}
 
-      // For JAXB Serialization to work every class must have a
+	public void setSletMig(String sletMig) {
+		this.sletMig = sletMig;
+	}
+
+	// For JAXB Serialization to work every class must have a
       // default no-arg constructor
       // if there are any other constructors defined!
       public Account() {
